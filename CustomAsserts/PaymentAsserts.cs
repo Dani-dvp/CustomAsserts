@@ -1,6 +1,6 @@
 ﻿namespace CustomAsserts
 {
-    public class Class1
+    public class PaymentAsserts
     {
 
     }
