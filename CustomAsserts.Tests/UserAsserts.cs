@@ -36,9 +36,9 @@ namespace CustomAsserts.Tests
         }
         public static void UserPasswordIsOver8CharactersLong(this Assert assert, string password)
         {
-            if (password.Length < 8 && password.Length > 0)
+            if (password.Length > 8 && password.Length > 0)
                 return;
-            throw new AssertFailedException($"{password} must be longer than 8 characters");
+            throw new AssertFailedException($"password must be longer than 8 characters");
         }
         public static void UserEmailIsValid(this Assert assert, string userEmail)
         {
