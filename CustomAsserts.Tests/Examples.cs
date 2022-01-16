@@ -78,5 +78,55 @@ namespace CustomAsserts.Tests
         {
             Assert.That.AbleToDeposit(depositAmount);
         }
+
+        [TestMethod]
+        [DataRow("Kalle")]
+        [DataRow("!!!!")]
+        public void UserNameIsValid(string userName)
+        {
+            Assert.That.UserNameIsValid(userName);
+        }
+        [TestMethod]
+        [DataRow("Janne")]
+        [DataRow("JanneGoingAtItAgain")]
+        [DataRow("")]
+        public void UserNameIsTenCharactersOrLess(string userName)
+        {
+            Assert.That.UserNameIsUnderTenCharactersLong(userName);
+        }
+        [TestMethod]
+        [DataRow("JanneGoingAtItAgain1945")]
+        [DataRow("Jan")]
+        [DataRow("")]
+        public void UserNameIsTwentyCharactersOrLess(string userName)
+        {
+            Assert.That.UserNameIsUnderTwentyCharactersLong(userName);
+        }
+        [TestMethod]
+        [DataRow("Email@Email.com")]
+        [DataRow("ShouldFail")]
+        [DataRow("")]
+        public void UserEmailIsValid(string userEmail)
+        {
+            Assert.That.UserEmailIsValid(userEmail);
+        }
+        [TestMethod]
+        [DataRow("Password1")]
+        [DataRow("password1")]
+        [DataRow("pw")]
+        [DataRow("")]
+        public void UserPasswordIsValid(string password)
+        {
+            Assert.That.UserPasswordIsValid(password);
+        }
+        [TestMethod]
+        [DataRow("LillePelle123")]
+        [DataRow("Janne65")]
+        [DataRow("")]
+        public void UserPasswordIsGreaterThanEightCharacters(string password)
+        {
+            Assert.That.UserPasswordIsOver8CharactersLong(password);
+        }
+
     }
 }
