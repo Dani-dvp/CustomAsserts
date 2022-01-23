@@ -2,13 +2,18 @@
 
 namespace CustomAsserts
 {
-    public class Payments
+    public class Card
     {
+        //Example Entity
         public string CardNumber { get; set; }
+        public string Date { get; set; }
+        public string CVC { get; set; }
 
-        public Payments()
+        public Card()
         {
             CardNumber = "1234 5678 9012 3456";
+            Date = "05/23";
+            CVC = "123";
         }
     }
 }

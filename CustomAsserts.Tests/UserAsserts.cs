@@ -12,7 +12,7 @@ namespace CustomAsserts.Tests
     {
         public static void UserNameIsValid(this Assert assert, string userName)
         {
-            if (Regex.IsMatch(userName, "[a-zA-Z]+") || Regex.IsMatch(userName, "[0-9+"))
+            if (Regex.IsMatch(userName, "[a-zA-Z]+") || Regex.IsMatch(userName, "[0-9+]"))
                 return;
             throw new AssertFailedException($"Username {userName} is not a valid username");
         }
