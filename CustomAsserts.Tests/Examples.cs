@@ -19,9 +19,10 @@ namespace CustomAsserts.Tests
 
         [TestMethod]
         [DataRow("1234567890123456", "123")]
-        public void CardHasAllValidValues(string cardNumber, string cvvOrCvc)
+        public void CardHasAllValidValues(string cardNumber, string date, string cvvOrCvc)
         {
             Assert.That.CardHasCorrectNumberValue(cardNumber);
+            Assert.That.CardHasCorrectDateValue(date);
             Assert.That.CardHasCorrectCvvOrCvcValue(cvvOrCvc);
         }
 
