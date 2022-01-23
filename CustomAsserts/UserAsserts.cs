@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CustomAsserts.Tests
 {
-    internal static class UserAsserts
+    public static class UserAsserts
     {
         public static void UserNameIsValid(this Assert assert, string userName)
         {

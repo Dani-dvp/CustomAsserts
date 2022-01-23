@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CustomAsserts.Tests
 {
-    internal static class CardAsserts
+    public static class CardAsserts
     {
         public static void StringIsEmpty(this Assert assert, string actual)
         {
