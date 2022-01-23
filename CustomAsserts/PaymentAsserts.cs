@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Text.RegularExpressions;
 
-namespace CustomAsserts.Tests
+namespace CustomAsserts
 {
     public static class PaymentAsserts
     {
@@ -20,7 +19,7 @@ namespace CustomAsserts.Tests
 
         public static void AbleToDeposit(this Assert assert, int depositAmount)
         {
-            if(depositAmount <= 0 )
+            if (depositAmount <= 0)
                 throw new AssertFailedException($"The Deposit amount was either negative or zero. Deposit:{depositAmount}");
 
             return;
