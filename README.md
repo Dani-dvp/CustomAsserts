@@ -9,7 +9,7 @@ Make sure you've installed the following before trying to run the project:
 - Visual Studio 2022
 - .NET 6.0
 
-##How to install:
+## How to install:
 1. Create an MSTest Project
 2. Manage the projects nuGet Packages
 3. Search for KEOL.Asserts.DebitAsserts
